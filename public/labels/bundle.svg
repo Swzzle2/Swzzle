@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="500" height="425" viewBox="0 0 500 425">
-  <rect x="20" y="0" width="220" height="425" rx="12" fill="#0a0a10" stroke="#FF2020" stroke-width="2"/>
-  <text x="130" y="210" text-anchor="middle" fill="#FF2020" font-family="sans-serif" font-size="18" font-weight="bold">RED</text>
-  <rect x="260" y="0" width="220" height="425" rx="12" fill="#0a0a10" stroke="#00F5FF" stroke-width="2"/>
-  <text x="370" y="210" text-anchor="middle" fill="#00F5FF" font-family="sans-serif" font-size="18" font-weight="bold">BLUE</text>
-</svg>
