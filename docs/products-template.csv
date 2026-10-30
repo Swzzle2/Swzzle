@@ -1,0 +1,6 @@
+slug,swzzle_name,tagline,description,category,line,status,legal_copy,hazard_pictograms,athea_product_name,athea_part_number,size_label,sku,mro_price,consumer_price
+example-heavy-degreaser,Example Heavy Degreaser,Alkaline degreaser for shop floors.,"Cuts grease, oil and carbon. Dilutes 1:10 to 1:40.",Degreasers,industrial,draft,"Wear eye protection and gloves. For industrial use only.",GHS05|GHS07,ATHEA PRODUCT NAME,ATH-12345,1 gal,SWZ-EXDEG-1G,34.00,
+example-heavy-degreaser,,,,,,,,,,,5 gal pail,SWZ-EXDEG-5G,139.00,
+example-heavy-degreaser,,,,,,,,,,,case of 4,SWZ-EXDEG-4X1G,118.00,
+example-floor-cleaner,Example Floor Cleaner,pH-neutral daily floor cleaner.,Safe on sealed floors.,Floor Care,both,draft,Keep out of reach of children.,GHS07,ATHEA FLOOR,ATH-22222,1 qt,SWZ-EXFLR-1QT,11.00,14.99
+example-floor-cleaner,,,,,,,,,,,1 gal,SWZ-EXFLR-1G,26.00,32.99
