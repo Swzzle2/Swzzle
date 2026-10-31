@@ -28,12 +28,14 @@ const { data, error } = await supabase
   .eq("email", email) // Supabase Auth stores emails lowercased
   .select("email");
 
+// Set exitCode rather than calling process.exit() after a fetch: on Windows, exiting with
+// open sockets trips a libuv assertion.
 if (error) {
   console.error("Failed:", error.message);
-  process.exit(1);
-}
-if (!data?.length) {
+  process.exitCode = 1;
+} else if (!data?.length) {
   console.error(`No profile for ${email}. Sign up at /signup first, then re-run.`);
-  process.exit(1);
+  process.exitCode = 1;
+} else {
+  console.log(`${data[0].email} is now an admin.`);
 }
-console.log(`${data[0].email} is now an admin.`);
