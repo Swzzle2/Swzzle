@@ -5,8 +5,13 @@ import { cookies } from "next/headers";
 import { connection } from "next/server";
 import { supabaseAnonKey, supabaseUrl } from "@/lib/env";
 
-/** Session-aware client for admin pages and server actions. RLS applies as the signed-in user. */
+/**
+ * Session-aware client for admin pages and server actions. RLS applies as the signed-in user.
+ * Awaits connection() so session reads never run during a prerender: cookies() alone isn't enough
+ * under partial prefetching, and supabase-js checks token expiry with Date.now().
+ */
 export async function createClient() {
+  await connection();
   const cookieStore = await cookies();
   return createServerClient(supabaseUrl(), supabaseAnonKey(), {
     cookies: {
